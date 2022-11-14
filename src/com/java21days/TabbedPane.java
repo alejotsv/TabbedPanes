@@ -9,9 +9,18 @@ public class TabbedPane extends JFrame {
     TabbedPane(String title){
         super(title);
         setSize(dim);
-
+        JTabbedPane mainTabbedPane = new JTabbedPane();
+        add(mainTabbedPane);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    JPanel addTab(String label1, String label2, String button){
+        JPanel tab = new JPanel();
+
+        return tab;
+    }
+
+
 }
