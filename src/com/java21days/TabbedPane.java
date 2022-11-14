@@ -11,6 +11,13 @@ public class TabbedPane extends JFrame {
         setSize(dim);
         JTabbedPane mainTabbedPane = new JTabbedPane();
         add(mainTabbedPane);
+
+        JPanel name = createTab("Name: ", "Comments: ");
+        JPanel email = createTab("E-mail: ", "Comments: ");
+        JPanel favoriteFood = createTab("Favorite food: ", "Alergies: ");
+
+
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
