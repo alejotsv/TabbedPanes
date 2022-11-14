@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TabbedPane extends JFrame {
-    Dimension dim = new Dimension(500, 200);
+    Dimension dim = new Dimension(300, 200);
 
     TabbedPane(String title){
         super(title);
@@ -16,7 +16,9 @@ public class TabbedPane extends JFrame {
         JPanel email = createTab("E-mail: ", "Comments: ");
         JPanel favoriteFood = createTab("Favorite food: ", "Alergies: ");
 
-
+        mainTabbedPane.add("Name", name);
+        mainTabbedPane.add("E-mail", email);
+        mainTabbedPane.add("Favorite Food", favoriteFood);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
